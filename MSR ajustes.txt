@@ -1,0 +1,56 @@
+cd C:\MSR   
+
+: Documentación de MSR modificados en Ryzen
+:: Optimización extrema para máximo rendimiento (FPS) y mínima latencia
+
+:: ------------------------ VALORES APLICADOS Y FUNCIÓN ------------------------
+
+:: ---------- SMU Overrides ----------
+SMU Override Master Enable                                 msr-cmd.exe -l write 0xC0011039 0x0000000000000001
+SMU Debug Mode Enable                                      msr-cmd.exe -l write 0xC0011035 0x0000000000000001
+Desactiva funciones SMU innecesarias                       msr-cmd.exe -l write 0xC0011034 0x0000000000000000
+
+:: ---------- C-States y Frecuencia ----------
+Desactiva HW P-State Control (frecuencia fija)             msr-cmd.exe -l write 0xC0011005 0x0000000000000000
+Evita entrar en C1/C6 (reduce latencia)                    msr-cmd.exe -l write 0xC0011020 0x0000000000000001
+Fuerza uso del P-State más alto (máx. frecuencia)          msr-cmd.exe -l write 0xC0010015 0x0000000000000001
+Límite de frecuencia máxima fija en P-State                msr-cmd.exe -l write 0xC0010062 0x00000001
+
+:: ---------- Caché e instrucciones ----------
+Activa prefetcher de instrucciones                         msr-cmd.exe -l write 0xC001102B 0x0000000000000001
+Aumenta agresividad de prefetch en caché L2/L3             msr-cmd.exe -l write 0xC001103C 0x0000000000000003
+
+:: ---------- Prefetching ----------
+Activa L2 Stream HW prefetcher                             msr-cmd.exe -l write 0xC001102C 0x0000000000000001
+Activa L2 Stream SW prefetcher                             msr-cmd.exe -l write 0xC001102D 0x0000000000000001
+
+:: ---------- DRAM y coherencia NB ----------
+Optimiza coherencia con DRAM y región NB                   msr-cmd.exe -l write 0xC0011022 0x0000000000510000
+Desactiva funciones del NorthBridge                        msr-cmd.exe -l write 0xC001102A 0x0000000000000000
+Desactiva redundancia en L3 (mejor latencia)               msr-cmd.exe -l write 0xC0011031 0x0000000000000000
+Optimiza orden de transacciones de memoria                 msr-cmd.exe -l write 0xC0011029 0x0000000000000000
+
+:: ---------- Latencia y sincronización entre núcleos ----------
+Desactiva sincronización inter-core forzada                msr-cmd.exe -l write 0xC001102F 0x0000000000000000
+Desactiva funciones de auto balance entre núcleos          msr-cmd.exe -l write 0xC001103B 0x0000000000000000
+
+:: ---------- Nuevos Avanzados ----------
+Configura perfil agresivo de ejecución                     msr-cmd.exe -l write 0xC0011021 0x0000000000000040
+Desactiva protecciones de coherencia                       msr-cmd.exe -l write 0xC0010293 0x0000000000100000
+Desactiva funciones internas innecesarias                  msr-cmd.exe -l write 0xC0010030 0x0000000000000000
+Desactiva desvíos y excepciones poco útiles                msr-cmd.exe -l write 0xC0010041 0x0000000000000000
+Idem anterior (debug)                                      msr-cmd.exe -l write 0xC0010042 0x0000000000000000
+
+:: Nuevos MSR adicionales para máximo FPS
+Activa bypass en gestor de energía                         msr-cmd.exe -l write 0xC0011002 0x0000000000000001
+Desactiva P-State mínimo                                    msr-cmd.exe -l write 0xC0011015 0x0000000000000000
+Controla burst dinámico                                     msr-cmd.exe -l write 0xC0011060 0x0000000000000000
+Controla política de entrada/salida                        msr-cmd.exe -l write 0xC0011024 0x0000000000000003
+Controla burst del scheduler                               msr-cmd.exe -l write 0xC0011061 0x0000000000000000
+
+:: MSR adicionales seguros y compatibles
+Optimiza comportamiento P-State intermedio                 msr-cmd.exe -l write 0xC0011016 0x0000000000000001
+Aumenta agresividad en acceso anticipado                   msr-cmd.exe -l write 0xC001103D 0x0000000000000003
+Activa comportamiento paralelo                             msr-cmd.exe -l write 0xC0011026 0x0000000000000001
+Activa coherencia en segmentos dinámicos                   msr-cmd.exe -l write 0xC0011027 0x0000000000000004
+Evita latencia de interconexión                             msr-cmd.exe -l write 0xC001103A 0x0000000000000001
