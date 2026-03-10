@@ -1,6 +1,5 @@
 📌ACERCA de MSR
-
-## Demo
+Msr es como se llama al conjunto de registros que guardan diversas configuraciones que se almacenan dentro del procesador.
 
 ![demo](images/demo.png)
 
