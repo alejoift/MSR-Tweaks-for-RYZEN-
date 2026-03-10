@@ -1,5 +1,5 @@
 📌ACERCA de MSR
-Msr es como se llama al conjunto de registros que guardan diversas configuraciones que se almacenan dentro del procesador.
+## Msr es como se llama al conjunto de registros que guardan diversas configuraciones dentro de los procesadores ryzen.
 
 ![demo](images/demo.png)
 
