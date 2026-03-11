@@ -11,10 +11,3 @@ MSR es como se llama al conjunto de registros que guardan diversas configuracion
 ## 🔄COMPATIBILIDAD
 windows 10 y windows 11.
 
-
-![demo](images/demo.png)
-
-## Características
-- Rápido
-- Ligero
-- Fácil de usar
