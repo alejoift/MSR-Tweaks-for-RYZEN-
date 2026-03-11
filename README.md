@@ -12,5 +12,12 @@ MSR es como se llama al conjunto de registros que guardan diversas configuracion
 windows 10 y windows 11.
 
 ## 🫆INSTRUCCIONES
-Primero que todo descarga el archivo .zip de [descargas](https://github.com/alejoift/MSR-Tweaks-for-RYZEN-/releases)
+-Primero que todo descarga el archivo .zip de [descargas](https://github.com/alejoift/MSR-Tweaks-for-RYZEN-/releases).
+-la carpeta que queda la copian en disco local c:/
+-presionan la tecla windows + r y copian shell:startup y le dan ejecutar.
+-click derecho shortcut, y buscan la carpeta que copiaron en disco local c, dentro esta msr.cmd y lo seleccionan.
+-le dan siguiente y aceptar.
+-cada vez que su pc inicie se van a aplicar los cambios automaticamente ya que no son permanentes.
+
+
 
