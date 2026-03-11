@@ -13,10 +13,15 @@ windows 10 y windows 11.
 
 ## 🫆INSTRUCCIONES
 1.-Primero que todo descarga el archivo .zip de [descargas](https://github.com/alejoift/MSR-Tweaks-for-RYZEN-/releases).
+
 2.-la carpeta que queda la copian en disco local c:/ 
+
 3.-presionan la tecla windows + r y copian shell:startup y le dan ejecutar.
+
 4.-click derecho shortcut, y buscan la carpeta que copiaron en disco local c, dentro esta msr.cmd y lo seleccionan.
+
 5.-le dan siguiente y aceptar.
+
 6.-cada vez que su pc inicie se van a aplicar los cambios automaticamente ya que no son permanentes.
 
 
