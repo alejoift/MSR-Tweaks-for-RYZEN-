@@ -11,3 +11,6 @@ MSR es como se llama al conjunto de registros que guardan diversas configuracion
 ## 🔄COMPATIBILIDAD
 windows 10 y windows 11.
 
+## 🫆INSTRUCCIONES
+Primero que todo descarga el archivo .zip de https://github.com/alejoift/MSR-Tweaks-for-RYZEN-/releases
+
