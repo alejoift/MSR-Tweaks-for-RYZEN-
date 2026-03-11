@@ -5,7 +5,7 @@ el autor de este archivo no se hace responsable de cualquier dano que pueda sufr
 MSR es como se llama al conjunto de registros que guardan diversas configuraciones dentro de los procesadores ryzen,si estas son modificados a valores mas optimos se puede obtener un aumento de rendimiento y una latencia mas baja.
 
 ## 🔄COMPATIBILIDAD
-se puede utilizar en windows 10 y windows 11.
+windows 10 y windows 11.
 
 
 
