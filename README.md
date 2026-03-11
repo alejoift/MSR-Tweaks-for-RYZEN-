@@ -24,5 +24,12 @@ windows 10 y windows 11.
 
 6.-cada vez que su pc inicie se van a aplicar los cambios automaticamente ya que no son permanentes.
 
+## 🧑‍💻COMUNIDAD
+Aqui puedes unirte a mi comunidad [discord](discord.gg/VRGFBNr2Nf),si les apasiona todo este mundo del gaming y las optimizaciones de pc se pueden unir y formar parte.
+
+
+
+
+
 
 
