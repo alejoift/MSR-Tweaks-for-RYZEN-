@@ -18,7 +18,7 @@ windows 10 y windows 11.
 
 3.-presionan la tecla WINDOWS + R , copian shell:startup y le dan ejecutar.
 
-4.-click derecho shortcut, y buscan la carpeta que copiaron en disco local c, dentro esta msr.cmd y lo seleccionan.
+4.-hacen click derecho shortcut, y buscan la carpeta que copiaron en disco local c, dentro esta msr.cmd y lo seleccionan.
 
 5.-le dan siguiente y aceptar.
 
