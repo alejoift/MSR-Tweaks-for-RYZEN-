@@ -14,7 +14,7 @@ windows 10 y windows 11.
 ## 🫆INSTRUCCIONES
 1.-Primero que todo descargan el archivo .zip de [descargas](https://github.com/alejoift/MSR-Tweaks-for-RYZEN-/releases) y lo descomprimen.
 
-2.La carpeta que queda la copian en disco local c:/ 
+2.-La carpeta que queda la copian en disco local c:/ 
 
 3.-Presionan la tecla WINDOWS + R , copian shell:startup y le dan ejecutar.
 
